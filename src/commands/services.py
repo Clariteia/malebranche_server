@@ -1,4 +1,5 @@
 import logging
+import urllib.parse
 
 from minos.cqrs import (
     CommandService,
@@ -15,6 +16,7 @@ logger = logging.getLogger(__name__)
 class LogCommandService(CommandService):
     @enroute.rest.command("/logs", "POST")
     async def create_log(self, request: RestRequest) -> Response:
-        content = await request.raw_request.text()
-        logger.info(content)
-        pass
+        c = request.raw_request
+        log = await c.json(loads=urllib.parse.parse_qs)
+
+        logger.info(log)
