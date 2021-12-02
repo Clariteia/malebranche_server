@@ -22,8 +22,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_USER=malebranche
-      - POSTGRES_PASSWORD=malebranche
+      - POSTGRES_USER=minos
+      - POSTGRES_PASSWORD=min0s
       - POSTGRES_MULTIPLE_DATABASES=log_db,log_query_db
     restart: always
     volumes:
