@@ -5,7 +5,9 @@ from __future__ import (
 from enum import (
     Enum,
 )
-from typing import Optional
+from typing import (
+    Optional,
+)
 
 from minos.common import (
     Aggregate,
