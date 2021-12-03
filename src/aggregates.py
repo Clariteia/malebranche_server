@@ -1,16 +1,13 @@
 from __future__ import (
-    annotations,
-)
+    annotations, )
 
 from enum import (
-    Enum,
-)
-from typing import Optional
+    Enum, )
+from typing import (
+    Optional, )
 
-from minos.common import (
-    Aggregate,
-    uuid,
-)
+from minos.common import Aggregate
+from minos.common import uuid
 
 
 class LogLevel(Enum):
