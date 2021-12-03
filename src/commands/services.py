@@ -1,24 +1,19 @@
 import logging
 from asyncio import (
-    StreamReader,
-)
+    StreamReader, )
 from io import (
-    BytesIO,
-)
+    BytesIO, )
 
 from fastavro import (
-    reader,
-)
+    reader, )
 from minos.cqrs import (
-    CommandService,
-)
+    CommandService, )
 from minos.networks import enroute
 from minos.networks import Response
 from minos.networks import RestRequest
 
 from ..aggregates import (
-    Log,
-)
+    Log, )
 
 logger = logging.getLogger(__name__)
 

@@ -1,13 +1,10 @@
 from __future__ import (
-    annotations,
-)
+    annotations, )
 
 from enum import (
-    Enum,
-)
+    Enum, )
 from typing import (
-    Optional,
-)
+    Optional, )
 
 from minos.common import Aggregate
 from minos.common import uuid
