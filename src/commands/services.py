@@ -12,11 +12,9 @@ from fastavro import (
 from minos.cqrs import (
     CommandService,
 )
-from minos.networks import (
-    Response,
-    RestRequest,
-    enroute,
-)
+from minos.networks import enroute
+from minos.networks import Response
+from minos.networks import RestRequest
 
 from ..aggregates import (
     Log,
