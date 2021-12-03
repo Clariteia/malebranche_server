@@ -2,12 +2,10 @@ from __future__ import (
     annotations,
 )
 
-from datetime import (
-    datetime,
-)
 from enum import (
     Enum,
 )
+from typing import Optional
 
 from minos.common import (
     Aggregate,
@@ -20,8 +18,24 @@ class LogLevel(Enum):
 
 
 class Log(Aggregate):
-    id: uuid
-    sublog_id: uuid
-    level: LogLevel
-    timestamp: datetime
-    content: str
+    message: str
+    name: str
+    args: list[str]
+    levelname: str
+    levelno: int
+    pathname: str
+    filename: str
+    module: str
+    exc_info: Optional[str]
+    exc_text: Optional[str]
+    stack_info: Optional[str]
+    lineno: int
+    funcName: str
+    created: float
+    msecs: float
+    relativeCreated: float
+    thread: int
+    threadName: str
+    processName: str
+    process: str
+    parent: str
