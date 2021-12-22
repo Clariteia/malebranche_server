@@ -1,13 +1,10 @@
 from dependency_injector.wiring import (
-    Provide,
-)
+    Provide, )
 from minos.cqrs import (
-    QueryService,
-)
+    QueryService, )
 
 from .repositories import (
-    LogQueryRepository,
-)
+    LogQueryRepository, )
 
 
 class LogQueryService(QueryService):

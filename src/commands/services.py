@@ -1,15 +1,13 @@
 import logging
 
 from minos.cqrs import (
-    CommandService,
-)
+    CommandService, )
 from minos.networks import enroute
 from minos.networks import Response
 from minos.networks import RestRequest
 
 from ..aggregates import (
-    Log,
-)
+    Log, )
 
 logger = logging.getLogger(__name__)
 
