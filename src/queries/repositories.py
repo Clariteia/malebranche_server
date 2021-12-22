@@ -2,10 +2,8 @@ from __future__ import (
     annotations,
 )
 
-from minos.common import (
-    MinosConfig,
-    MinosSetup,
-)
+from minos.common import MinosConfig
+from minos.common import MinosSetup
 from sqlalchemy import (
     create_engine,
 )

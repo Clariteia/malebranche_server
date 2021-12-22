@@ -4,7 +4,5 @@ from .aggregates import (
 from .commands import (
     LogCommandService,
 )
-from .queries import (
-    LogQueryRepository,
-    LogQueryService,
-)
+from .queries import LogQueryRepository
+from .queries import LogQueryService
