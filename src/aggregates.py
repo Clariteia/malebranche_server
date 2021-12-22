@@ -1,12 +1,17 @@
 from __future__ import (
-    annotations, )
+    annotations,
+)
 
 from enum import (
-    Enum, )
+    Enum,
+)
 from typing import (
-    Optional, )
+    Optional,
+)
 
-from minos.aggregate import Aggregate
+from minos.aggregate import (
+    Aggregate,
+)
 
 
 class LogLevel(Enum):

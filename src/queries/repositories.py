@@ -30,4 +30,3 @@ class LogQueryRepository(MinosSetup):
     @classmethod
     def _from_config(cls, *args, config: MinosConfig, **kwargs) -> LogQueryRepository:
         return cls(*args, **(config.repository._asdict() | {"database": "log_query_db"}) | kwargs)
-
