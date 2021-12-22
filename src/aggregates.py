@@ -6,8 +6,7 @@ from enum import (
 from typing import (
     Optional, )
 
-from minos.common import Aggregate
-from minos.common import uuid
+from minos.aggregate import Aggregate
 
 
 class LogLevel(Enum):
