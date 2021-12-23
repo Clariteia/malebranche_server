@@ -1,7 +1,4 @@
 from .repositories import (
-    LogQueryRepository,
-)
-from .services import (
-    LogQueryRepository,
-    LogQueryService,
-)
+    LogQueryRepository, )
+from .services import LogQueryRepository
+from .services import LogQueryService
